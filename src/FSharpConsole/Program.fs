@@ -6,7 +6,7 @@ let main argv =
     let dir = new System.IO.DirectoryInfo("C:\temp")
 
     // Intellisense fails when dotting into "dir" when the "CsharpProjWithExt" is opened above.
-    // Note that the this project does not reference the System.Windows.Forms assembly,
+    // Note that this project does not reference the "System.Windows.Forms" assembly,
     // but the imported extension method takes a "System.Windows.Forms.Form" argument.
     // Workarounds to restore intellisense include:
     // 1) Commenting out the "open CsharpProjWithExt" statement
